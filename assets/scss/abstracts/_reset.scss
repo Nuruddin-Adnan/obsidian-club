@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+ul,
+ol,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+input,
+button {
+	border: 0px;
+	&:focus {
+		outline: none;
+		box-shadow: none;
+	}
+}
+
+/* Hide Calendar Icon In Chrome */
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+	color: rgba(0, 0, 0, 0);
+	opacity: 1;
+	display: block;
+	// background: url(yourURLHere) no-repeat;
+	width: 24px;
+	height: 24px;
+	border-width: thin;
+}
+
+::-webkit-calendar-picker-indicator {
+	filter: invert(0.5);
+}
+
+a {
+	text-decoration: none;
+	&:hover,
+	&:focus {
+		color: inherit;
+	}
+}
+
+button {
+	display: inline-block;
+	background-color: transparent;
+}
+
+body {
+	// font-family: "metro-bold";
+	font-weight: 400;
+	font-family: "Inter", sans-serif;
+}

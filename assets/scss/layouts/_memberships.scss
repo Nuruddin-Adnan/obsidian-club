@@ -1,0 +1,70 @@
+.membership-tier {
+	padding: 80px 0px;
+	position: relative;
+	padding-bottom: 200px;
+	background-color: #131313;
+
+	@include max(1200px) {
+		padding: 80px 0px;
+	}
+
+	@include max(991px) {
+		height: auto;
+	}
+
+	.heading {
+		display: flex;
+		align-items: center;
+		margin-bottom: 60px;
+		justify-content: space-between;
+
+		@include max(991px) {
+			align-items: flex-start;
+		}
+
+		a {
+			margin-bottom: 20px;
+			display: inline-block;
+		}
+
+		h2 {
+			color: #fff;
+			font-size: 34px;
+			line-height: 54px;
+			position: relative;
+			padding-bottom: 12px;
+			text-transform: uppercase;
+			font-family: "metro-regular";
+
+			@include max(991px) {
+				font-size: 24px;
+				line-height: 28px;
+				padding-bottom: 12px;
+				margin-bottom: 24px;
+			}
+
+			&::after {
+				content: "";
+				left: 0;
+				top: 100%;
+				width: 120px;
+				height: 2px;
+				position: absolute;
+				background: linear-gradient(
+					90deg,
+					#ff9f2f 0%,
+					rgba(196, 196, 196, 0) 100%
+				);
+			}
+		}
+
+		button,
+		a {
+			font-size: 14px;
+			line-height: 16.94px;
+			text-transform: uppercase;
+			display: inline-block;
+			color: hsla(0, 0%, 100%, 0.5);
+		}
+	}
+}
